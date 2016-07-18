@@ -7,11 +7,9 @@ get '/' do
 end
 
 get '/cat' do
-  #'<div style="border:5px dotted red;">
-    '<img src="http://bit.ly/1eze8aE" style="border:5px dotted red;">'
-  #</div>'
+  erb(:index)
 end
- style="border:5px dotted red;"
+
 get '/secret' do
   "This is a secret"
 end
