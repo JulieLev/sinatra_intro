@@ -21,7 +21,14 @@ get '/sun' do
   'hot, hot, hot'
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  print params
+  @name = params[:name]
+  @nickname = params[:nickname]
   erb(:index)
 end
