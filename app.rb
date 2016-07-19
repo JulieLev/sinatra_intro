@@ -22,7 +22,8 @@ get '/sun' do
 end
 
 get '/cat' do
-  '<img src="http://bit.ly/1eze8aE" style="border: medium dashed red;">'
+  erb(:index)
+  #'<img src="http://bit.ly/1eze8aE" style="border: medium dashed red;">'
   # '<div style='border: 3px dashed red'>
       #  <img src='http://bit.ly/1eze8aE'>
     #  </div>'
