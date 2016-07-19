@@ -32,3 +32,8 @@ get '/named-cat' do
   @nickname = params[:nickname]
   erb(:index)
 end
+
+get '/cat_form' do
+  print params
+  erb(:form)
+end
